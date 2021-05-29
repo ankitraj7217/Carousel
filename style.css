@@ -1,0 +1,43 @@
+#slide-show-container {
+    height: 50vh;
+    margin: 2rem;
+    background-color: bisque;
+}
+
+.slide-show-container__element {
+    height: 100%;
+    display: none;
+}
+
+#next-arrow {
+    position: fixed;
+    width: 8rem;
+    height: 8rem;
+    top: 10rem;
+    right: 0;
+    cursor: pointer;
+}
+
+#prev-arrow {
+    position: fixed;
+    width: 8rem;
+    height: 7rem;
+    top: 10rem;
+    left: 0;
+    cursor: pointer;
+}
+
+.active {
+    display: block;
+    animation-name: example;
+    animation-duration: 0.4s;
+}
+
+@keyframes example {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
